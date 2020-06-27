@@ -9,10 +9,10 @@ public class Main {
         // 加载Spring的配置文件，初始化上下文：生成Bean对象。。。
         ApplicationContext context = new
                 ClassPathXmlApplicationContext("applications.xml");
-//        // 通过名字获取Bean对象
-//        Object o = context.getBean("myName");
-//        System.out.println(o.getClass());
-//        System.out.println(o);
+        // 通过名字获取Bean对象
+        Object o = context.getBean("myName");
+        System.out.println(o.getClass());
+        System.out.println(o);
 
 //        Object duck1 = context.getBean("duck1");
 //        System.out.println(duck1.getClass());
@@ -36,12 +36,12 @@ public class Main {
 //        System.out.println(duck1.getClass());
 //        System.out.println(duck1);
 
-        Object duck6 = context.getBean("duck6");
-        System.out.println(duck6.getClass());
-        System.out.println(duck6);
-
-        LoginController loginController = (LoginController)context.getBean("loginController");
-        System.out.println(loginController.getLoginService());
-        System.out.println(loginController.getDuck3());
+//        Object duck6 = context.getBean("duck6");
+//        System.out.println(duck6.getClass());
+//        System.out.println(duck6);
+//
+//        LoginController loginController = (LoginController)context.getBean("loginController");
+//        System.out.println(loginController.getLoginService());
+//        System.out.println(loginController.getDuck3());
     }
 }
