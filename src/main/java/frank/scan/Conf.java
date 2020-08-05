@@ -24,7 +24,7 @@ public class Conf {
     @Bean
     public DuckShop duckShop2(Duck duck5, Duck duck6){
         DuckShop duckShop = new DuckShop();
-        duckShop.setName("比特卤鸭店");
+        duckShop.setName("卤鸭店");
         List<Duck> ducks = new ArrayList<>();
         System.out.printf("================duck5=%s, duck6=%s\n",
                 duck5.getName(), duck6.getName());

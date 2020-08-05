@@ -31,7 +31,7 @@ default-autowire="byName">
     <bean id="duck6" class="frank.ioc.DuckFactory" factory-method="create2" />
 
     <bean id="duckShop" class="frank.ioc.DuckShop" scope="prototype">
-        <property name="name" value="比特烤鸭店" />
+        <property name="name" value="烤鸭店" />
         <property name="ducks">
             <list>
                 <ref bean="duck1" />
